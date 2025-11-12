@@ -33,7 +33,7 @@ The backend handles fraud detection, while this dashboard turns that raw data in
 | Styling | CSS Grid + Flexbox |
 | Data Source | Local CSV data (can be connected to live APIs later) |
 
----
+
 
 ## ⚙️ How to Run It
 
@@ -77,3 +77,4 @@ npm run dev
 **Author:** Anisha Malani  
 **Date:** November 2025  
 **Repository:** `voice-security-dashboard`
+---
