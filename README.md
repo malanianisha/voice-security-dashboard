@@ -38,24 +38,29 @@ The backend handles fraud detection, while this dashboard turns that raw data in
 ## ⚙️ How to Run It
 
 If you have Node.js installed:
+
 ```bash
 npm install
 npm run dev
 
-## 📄 Project Documents
 
-- [📘 Voice Security Dashboard Project Summary (PDF)](./docs/Voice%20Security%20Dashboard%20Summary.pdf)  
-- [📊 Enterprise Inbound Call Filtering (PPTX)](./docs/Enterprise%20Inbound%20Call%20Filtering.pptx)
+📄 Project Documents
+
+📘 Voice Security Dashboard Project Summary (PDF)
+
+📊 Enterprise Inbound Call Filtering (PPTX)
 
 
-## 🚀 Future Plans
+🚀 Future Plans
+Connect to live Forensics Server API
 
-- Connect to live Forensics Server API  
-- Add user authentication  
-- Include notifications for fraud spikes  
-- Add export options (CSV or PDF reports)  
-- Integrate AI-based anomaly detection
+Add user authentication
 
+Include notifications for fraud spikes
+
+Add export options (CSV or PDF reports)
+
+Integrate AI-based anomaly detection
 **Author:** Anisha Malani  
 **Date:** November 2025  
 **Repository:** `voice-security-dashboard`
