@@ -43,6 +43,20 @@ If you have Node.js installed:
 npm install
 npm run dev
 
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="images/dashboard-overview.png" width="720" alt="Dashboard Overview">
+</p>
+
+<p align="center">
+  <img src="images/fraud-detection-overview.png" width="720" alt="Fraud Detection Overview">
+</p>
+
+<p align="center">
+  <img src="images/fraud-map.png" width="720" alt="Fraud Map and Threat Origins">
+</p>
+
 ## 📄 Project Documents
 
 - [📘 Voice Security Dashboard Project Summary (PDF)](docs/Voice%20Security%20Dashboard%20Summary.pdf)
@@ -50,15 +64,16 @@ npm run dev
 
 
 🚀 Future Plans
-Connect to live Forensics Server API
+- Connect to live Forensics Server API
 
-Add user authentication
+- Add user authentication
 
-Include notifications for fraud spikes
+- Include notifications for fraud spikes
 
-Add export options (CSV or PDF reports)
+- Add export options (CSV or PDF reports)
 
-Integrate AI-based anomaly detection
+- Integrate AI-based anomaly detection
+
 **Author:** Anisha Malani  
 **Date:** November 2025  
 **Repository:** `voice-security-dashboard`
