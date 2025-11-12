@@ -46,9 +46,8 @@ npm run dev
 
 ## 📄 Project Documents
 
-- [📘 Voice Security Dashboard Project Summary (PDF)](./docs/Voice%20Security%20Dashboard%20Summary.pdf)  
-- [📊 Enterprise Inbound Call Filtering (PPTX)](./docs/Enterprise%20Inbound%20Call%20Filtering.pptx%20pptx.pptx)
-
+- [📘 Voice Security Dashboard Project Summary (PDF)](docs/Voice%20Security%20Dashboard%20Summary.pdf)
+- [📊 Enterprise Inbound Call Filtering (PPTX)](docs/Enterprise%20Inbound%20Call%20Filtering.pptx)
 
 
 🚀 Future Plans
