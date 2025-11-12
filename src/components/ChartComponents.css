@@ -1,0 +1,440 @@
+/* Shared styles for all chart components */
+.chart-container {
+  position: relative;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-button {
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-button:hover {
+  background: #45b7b8;
+}
+
+.dropdown-button.bar-chart {
+  background: #45b7d1;
+}
+
+.dropdown-button.bar-chart:hover {
+  background: #3498db;
+}
+
+.dropdown-button.location-chart {
+  background: #96ceb4;
+}
+
+.dropdown-button.location-chart:hover {
+  background: #85c1a3;
+}
+
+.dropdown-button.line-chart {
+  background: #e74c3c;
+}
+
+.dropdown-button.line-chart:hover {
+  background: #c0392b;
+}
+
+.dropdown-button.area-chart {
+  background: #27ae60;
+}
+
+.dropdown-button.area-chart:hover {
+  background: #229954;
+}
+
+.dropdown-button.radar-chart {
+  background: #9b59b6;
+}
+
+.dropdown-button.radar-chart:hover {
+  background: #8e44ad;
+}
+
+.dropdown-button.donut-chart {
+  background: #f39c12;
+}
+
+.dropdown-button.donut-chart:hover {
+  background: #e67e22;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #ffffff;
+  border: 2px solid #e1e8ed;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 180px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #2c3e50;
+  font-weight: 500;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #3498db;
+  color: white;
+  transform: translateX(2px);
+}
+
+/* Location chart specific styles */
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.legend {
+  margin-top: 15px;
+}
+
+.legend h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.legend-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Donut chart specific styles */
+.donut-stats {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  flex: 1;
+}
+
+.stat-name {
+  font-size: 0.9rem;
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Simple Location Chart Styles */
+.simple-map-container {
+  height: 300px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.world-map-placeholder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Cpath d='M20 20h15v8h-15zm40 5h20v12h-20zm-30 15h25v10h-25z' fill='%23ffffff' opacity='0.1'/%3E%3C/svg%3E") no-repeat center;
+  background-size: 80%;
+}
+
+.map-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.map-message h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.map-message p {
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+.map-note {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.location-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.location-bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.location-bubble:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Donut chart center text */
+.donut-center-text {
+  pointer-events: none;
+}
+
+/* Fraud chart specific styles */
+.dropdown-button.fraud-chart {
+  background: #e74c3c;
+}
+
+.dropdown-button.fraud-chart:hover {
+  background: #c0392b;
+}
+
+.dropdown-button.severity-chart {
+  background: #f39c12;
+}
+
+.dropdown-button.severity-chart:hover {
+  background: #e67e22;
+}
+
+.dropdown-button.treatment-chart {
+  background: #27ae60;
+}
+
+.dropdown-button.treatment-chart:hover {
+  background: #229954;
+}
+
+/* Dimmed stats for filtered view */
+.stat-dimmed {
+  opacity: 0.3;
+}
+
+/* Fraud time analysis styles */
+.fraud-time-stats {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.time-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .time-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.time-stat-card {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.time-stat-title {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.time-stat-value {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Location map specific styles */
+.location-summary {
+  margin-top: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.summary-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.total-threats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.total-label {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.total-value {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.location-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.location-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.location-stat-item:hover {
+  transform: translateX(3px);
+}
+
+.location-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.location-info {
+  flex: 1;
+}
+
+.location-name {
+  font-size: 0.9rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.location-count {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+.location-percentage {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: right;
+}
