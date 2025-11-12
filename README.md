@@ -1,5 +1,7 @@
 # 🛡️ Voice Security / Fraud Detection Dashboard
 
+🔗 **Live Demo:** [https://voice-security-dashboard.vercel.app/](https://voice-security-dashboard.vercel.app/)
+
 This project is an **interactive web dashboard** that visualizes fraudulent and suspicious call activity across telecom networks.  
 It helps analysts monitor threat levels, identify fraud patterns, and track how inbound calls are being filtered in real time.
 
